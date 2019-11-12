@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Pantalla1.css">
+</head>
+<body>
+     <!--Objetos en primera Pantalla--> 
+    <div class="Pantalla1" id="p1">
+        <div class="Encabezado">
+            <h1>Anotador para Generala</h1>
+        </div>
+        <div class="Contenido">
+            <div class="fondo">
+                
+                <div class="subpantalla1">
+                    <button class="btnmenu" id="bt1">Anotar nuevo juego!</button>    
+                </div>
+                <div class="Ventana" id="vej">
+                        <div class="Encabezado"><p id="tvjugadores">Cuantos Jugadores son?</p></div>
+                <div class="ElegJugador" id="vejop">
+                        
+                        <div class="opcion">
+                            <input type="radio" class="njugador" value="1" name="dadoz">
+                            <img src="img/Dado 1.svg" alt="">
+                        </div>
+                        <div class="opcion">
+                                <input type="radio" class="njugador" value="2" name="dadoz">
+                                <img src="img/Dado 2.svg" alt="">
+                        </div>
+                        <div class="opcion" >
+                                <input type="radio" class="njugador" value="3" name="dadoz">
+                                <img src="img/Dado 3.svg" alt="">
+                        </div>
+                        <div class="opcion">
+                                <input type="radio" class="njugador" value="4" name="dadoz">
+                                <img src="img/Dado 4.svg" alt="">
+                        </div>
+                        <div class="opcion">
+                                <input type="radio" class="njugador" value="5" name="dadoz">
+                                <img src="img/Dado 5.svg" alt="">
+                        </div>
+
+                    
+                       
+                 </div>
+                 <div class="Nombres" id="ventananombres">
+                        <p id="nombrevacio">Debe ingresar un nombre para el jugador!</p>
+                        <input type="text" id="inputnombres">
+                        <button class="btnmenu" id="btn3">Siguiente!</button>
+                </div>   
+                                            
+                 <button class="btnmenu" id="btn2">Siguiente!</button>
+                </div>
+            </div>
+        </div>
+        <div class="Pie">
+            <h4>Copyright</h4>
+        </div>
+</div>
+<!--Objetos en Segunda Pantalla (anotador corriendo)--> 
+<div class="Pantalla2" id="p2">
+        <div class="Encabezado2" id="e2">
+            <h1>Anotador para Generala</h1>
+            <div class="Menuanotador">
+                <button class="Btnmenuanotador" id="limpiar">Limpiar</button>
+                <button class="Btnmenuanotador" id="musica">Musica off</button>
+                <button class="Btnmenuanotador" id="volver">Volver</button>
+        </div>
+        </div>
+        <div class="Contenido">
+            <div class="Anotador">
+                <div class="TipoJugada">
+                    <div class="Fila" id="tjugadas" ><h4 >Jugadas</h4></div>
+                    <div class="Fila"><img src="img/Dado 1.svg" alt=""></div>
+                    <div class="Fila"><img src="img/Dado 2.svg" alt=""></div>
+                    <div class="Fila"><img src="img/Dado 3.svg" alt=""></div>
+                    <div class="Fila"><img src="img/Dado 4.svg" alt=""></div>
+                    <div class="Fila"><img src="img/Dado 5.svg" alt=""></div>
+                    <div class="Fila"><img src="img/Dado 6.svg" alt=""></div>
+                    <div class="Fila"><h3>Escalera</h3></div>
+                    <div class="Fila"><h3>Full</h3></div>
+                    <div class="Fila"><h3>Poker</h3></div>
+                    <div class="Fila"><h3>Generala</h3></div>
+                    <div class="Fila"><h3>Doble Generala</h3></div>
+                    <div class="Fila"><h3>Total</h3></div>
+                </div>
+
+                <div class="Jugadores" id="j1">
+                    <div class="Fila" id="player1"><h3 class="n">Player1</h3></div>
+                    <div class="Fila"><li class="pj1" value="0" onclick="Anotar(pj1[0].value,jugador1)">0</li></div>
+                    <div class="Fila"><li class="pj1" value="1" onclick="Anotar(pj1[1].value,jugador1)">0</li></div>
+                    <div class="Fila"><li class="pj1" value="2" onclick="Anotar(pj1[2].value,jugador1)">0</li></div>
+                    <div class="Fila"><li class="pj1" value="3" onclick="Anotar(pj1[3].value,jugador1)">0</li></div>
+                    <div class="Fila"><li class="pj1" value="4" onclick="Anotar(pj1[4].value,jugador1)">0</li></div>
+                    <div class="Fila"><li class="pj1" value="5" onclick="Anotar(pj1[5].value,jugador1)">0</li></div>
+                    <div class="Fila"><li class="pj1" value="6" onclick="Anotar(pj1[6].value,jugador1)">0</li></div>
+                    <div class="Fila"><li class="pj1" value="7" onclick="Anotar(pj1[7].value,jugador1)">0</li></div>
+                    <div class="Fila"><li class="pj1" value="8" onclick="Anotar(pj1[8].value,jugador1)">0</li></div>
+                    <div class="Fila"><li class="pj1" value="9" onclick="Anotar(pj1[9].value,jugador1)">0</li></div>
+                    <div class="Fila"><li class="pj1" value="10" onclick="Anotar(pj1[10].value,jugador1)">0</li></div>
+                    <div class="Fila"><li class="total" value="11"></li></div>
+                </div>
+                
+                <div class="Jugadores" id="j2">
+                        <div class="Fila" id="player2"><h3 class="n">Player2</h3></div>
+                        <div class="Fila"><li class="pj2" value="0" onclick="Anotar(pj2[0].value,jugador2)">0</li></div>
+                        <div class="Fila"><li class="pj2" value="1" onclick="Anotar(pj2[1].value,jugador2)">0</li></div>
+                        <div class="Fila"><li class="pj2" value="2" onclick="Anotar(pj2[2].value,jugador2)">0</li></div>
+                        <div class="Fila"><li class="pj2" value="3" onclick="Anotar(pj2[3].value,jugador2)">0</li></div>
+                        <div class="Fila"><li class="pj2" value="4" onclick="Anotar(pj2[4].value,jugador2)">0</li></div>
+                        <div class="Fila"><li class="pj2" value="5" onclick="Anotar(pj2[5].value,jugador2)">0</li></div>
+                        <div class="Fila"><li class="pj2" value="6" onclick="Anotar(pj2[6].value,jugador2)">0</li></div>
+                        <div class="Fila"><li class="pj2" value="7" onclick="Anotar(pj2[7].value,jugador2)">0</li></div>
+                        <div class="Fila"><li class="pj2" value="8" onclick="Anotar(pj2[8].value,jugador2)">0</li></div>
+                        <div class="Fila"><li class="pj2" value="9" onclick="Anotar(pj2[9].value,jugador2)">0</li></div>
+                        <div class="Fila"><li class="pj2" value="10" onclick="Anotar(pj2[10].value,jugador2)">0</li></div>
+                        <div class="Fila"><li class="total"  value="11" ></li></div>
+                    </div>
+                    <div class="Jugadores" id="j3">
+                            <div class="Fila"id="player3"><h3 class="n">Player3</h3></div>
+                            <div class="Fila"><li class="pj3" value="0" onclick="Anotar(pj3[0].value,jugador3)">0</li></div>
+                            <div class="Fila"><li class="pj3" value="1" onclick="Anotar(pj3[1].value,jugador3)">0</li></div>
+                            <div class="Fila"><li class="pj3" value="2" onclick="Anotar(pj3[2].value,jugador3)">0</li></div>
+                            <div class="Fila"><li class="pj3" value="3" onclick="Anotar(pj3[3].value,jugador3)">0</li></div>
+                            <div class="Fila"><li class="pj3" value="4" onclick="Anotar(pj3[4].value,jugador3)">0</li></div>
+                            <div class="Fila"><li class="pj3" value="5" onclick="Anotar(pj3[5].value,jugador3)">0</li></div>
+                            <div class="Fila"><li class="pj3" value="6" onclick="Anotar(pj3[6].value,jugador3)">0</li></div>
+                            <div class="Fila"><li class="pj3" value="7" onclick="Anotar(pj3[7].value,jugador3)">0</li></div>
+                            <div class="Fila"><li class="pj3" value="8" onclick="Anotar(pj3[8].value,jugador3)">0</li></div>
+                            <div class="Fila"><li class="pj3" value="9" onclick="Anotar(pj3[9].value,jugador3)">0</li></div>
+                            <div class="Fila"><li class="pj3" value="10" onclick="Anotar(pj3[10].value,jugador3)">0</li></div>
+                            <div class="Fila"><li class="total" value="11" ></li></div>
+                            </div>
+                        <div class="Jugadores" id="j4">
+                                <div class="Fila"id="player4"><h3 class="n">Player4</h3></div>
+                                <div class="Fila"><li class="pj4" value="0" onclick="Anotar(pj4[0].value,jugador4)">0</li></div>
+                                <div class="Fila"><li class="pj4" value="1" onclick="Anotar(pj4[1].value,jugador4)">0</li></div>
+                                <div class="Fila"><li class="pj4" value="2" onclick="Anotar(pj4[2].value,jugador4)">0</li></div>
+                                <div class="Fila"><li class="pj4" value="3" onclick="Anotar(pj4[3].value,jugador4)">0</li></div>
+                                <div class="Fila"><li class="pj4" value="4" onclick="Anotar(pj4[4].value,jugador4)">0</li></div>
+                                <div class="Fila"><li class="pj4" value="5" onclick="Anotar(pj4[5].value,jugador4)">0</li></div>
+                                <div class="Fila"><li class="pj4" value="6" onclick="Anotar(pj4[6].value,jugador4)">0</li></div>
+                                <div class="Fila"><li class="pj4" value="7" onclick="Anotar(pj4[7].value,jugador4)">0</li></div>
+                                <div class="Fila"><li class="pj4" value="8" onclick="Anotar(pj4[8].value,jugador4)">0</li></div>
+                                <div class="Fila"><li class="pj4" value="9" onclick="Anotar(pj4[9].value,jugador4)">0</li></div>
+                                <div class="Fila"><li class="pj4" value="10" onclick="Anotar(pj4[10].value,jugador4)">0</li></div>
+                                <div class="Fila"><li class="total" value="11"></li></div>
+                            </div>
+                            <div class="Jugadores" id="j5">
+                                    <div class="Fila" id="player5"><h3 class="n">Player5</h3></div>
+                            <div class="Fila"><li class="pj5" value="0" onclick="Anotar(pj5[0].value,jugador5)">0</li></div>
+                            <div class="Fila"><li class="pj5" value="1" onclick="Anotar(pj5[1].value,jugador5)">0</li></div>
+                            <div class="Fila"><li class="pj5" value="2" onclick="Anotar(pj5[2].value,jugador5)">0</li></div>
+                            <div class="Fila"><li class="pj5" value="3" onclick="Anotar(pj5[3].value,jugador5)">0</li></div>
+                            <div class="Fila"><li class="pj5" value="4" onclick="Anotar(pj5[4].value,jugador5)">0</li></div>
+                            <div class="Fila"><li class="pj5" value="5" onclick="Anotar(pj5[5].value,jugador5)">0</li></div>
+                            <div class="Fila"><li class="pj5" value="6" onclick="Anotar(pj5[6].value,jugador5)">0</li></div>
+                            <div class="Fila"><li class="pj5" value="7" onclick="Anotar(pj5[7].value,jugador5)">0</li></div>
+                            <div class="Fila"><li class="pj5" value="8" onclick="Anotar(pj5[8].value,jugador5)">0</li></div>
+                            <div class="Fila"><li class="pj5" value="9" onclick="Anotar(pj5[9].value,jugador5)">0</li></div>
+                            <div class="Fila"><li class="pj5" value="10" onclick="Anotar(pj5[10].value,jugador5)">0</li></div>
+                            <div class="Fila"><li class="total" value="11" ></li></div>
+                                </div>
+                                         
+            </div>            
+            
+        </div>
+        <div class="Ventanaopciones" id="Puntuar">
+                <div class="Barratitulo">
+                    <h3 class="Titulo">Anotar Puntos</h3>
+                    <img src="img/cerrar.png" alt="" class="cerrar" id="CerrarPuntos">
+                </div>
+                <div class="Contenedorv">
+                    <p>Seleccion los Puntos que desea anotar</p>
+                    <button class ="Btnpuntos" value=1 onclick="AnotarPunto(btnpuntos[0].value)"> Uno</button>
+                    <button class ="Btnpuntos" value=2 onclick="AnotarPunto(btnpuntos[1].value)"> Dos</button>
+                    <button class ="Btnpuntos" value=3 onclick="AnotarPunto(btnpuntos[2].value)"> Tres</button>
+                    <button class ="Btnpuntos" value=4 onclick="AnotarPunto(btnpuntos[3].value)"> Cuatro</button>
+                    <button class ="Btnpuntos" value=5 onclick="AnotarPunto(btnpuntos[4].value)"> Cinco</button>
+                    <button class ="Btnpuntos" value=0 onclick="AnotarPunto(btnpuntos[5].value)"> Tachar</button>
+                    <button class ="Btnpuntos" value=40 onclick="AnotarPunto(btnpuntos[6].value)"> Servido</button>
+                    <button class ="Btnpuntos" value=41 onclick="AnotarPunto(btnpuntos[7].value)">No Servido </button>
+                </div>
+         </div> 
+         <div class="Ventanaopciones" id="cerrarjuego">
+                <div class="Barratitulo">
+                    <h3 class="Titulo">Abandonar Juego</h3>
+                    <img src="img/cerrar.png" alt="" class="cerrar" id="cancelacerrar">
+                </div>
+                <div class="Contenedorv">
+                        <p>Esta a punto de abandonar el juego.Se perderan los datos</p>
+                        <p>Desea continuar?</p>
+                        <button class="Btnmenuanotador" id="siabandonar">Si</button>
+                        <button class="Btnmenuanotador" id="noabandonar">no</button>
+                </div>
+         </div>                         
+</div>
+<!--Anotador-->
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,474 @@
+/*Contenedor de la Pantalla1 */
+
+.Pantalla1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+}
+
+/*Encabezado y titulo pantalla1 */
+.Encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background: #54381e;
+    border: white 1px solid;
+
+}
+
+
+
+/* Pantalla2*/
+.Contenido{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    background: gray;
+
+}
+/*Pie de pagina*/
+.Pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    background:#54381e;
+    border: white 1px solid;
+}
+
+
+/* Ajusto Detalles de encabezado en la segunda pantalla*/
+.Encabezado2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 7%;
+    background: #54381e;
+    border: white 1px solid;
+}
+
+.Encabezado2 h1{
+
+font-size: 100%;
+
+}
+/*configruacion de div con imagen de fondo*/
+.fondo{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+background-image: url(../img/fondo1.jpg);
+background-size:cover;
+
+}
+
+/* Boton nuevo juego y animacion*/
+.btnmenu {
+	box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+	background-color:#7d5d3b;
+	border-radius:4px;
+	border:1px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 0px 50px #4d3534;
+}
+.btnmenu:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color:#634b30;
+}
+.btnmenu:active {
+	position:relative;
+	top:1px;
+}
+
+.Pantalla2{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+}
+
+/* Defino elementos del anotador */
+
+.Anotador{
+
+    display: flex;
+    flex-direction: row;
+    background: orange;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Columna jugadas*/
+
+.TipoJugada{
+
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    background: peru;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;    
+    border: solid 1px white;
+}
+
+.Jugadores{
+
+    display: flex;
+    /* Defino que cada uno de los divs se apile en conlumnas (cada uno de los tipos de puntos)*/
+    flex-direction: column;
+    /* Centro el contenido para que los puntos estencentrados */
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    background: peru;
+    margin: 1%; 
+    border: solid 1px white;
+
+}
+
+.Fila{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: white solid 1px;
+}
+
+.Fila img{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    padding: 10%;
+
+}
+
+
+
+/*Subpantalla de seleccion de jugadores (Pantalla1)*/
+
+.Ventana{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    top: -10%;
+    border: white 1px solid;
+    justify-content: center;
+    align-items: center;
+    background: orange;
+    visibility: hidden;
+}
+/* Contiene opciones y representacion grafica de cantidad de jugadores*/
+.ElegJugador{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+/*Cada uno de los Radios)*/
+.opcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+/*imagenes que acompañan a cada radio*/
+
+.opcion img{
+
+    width: 50%;
+    height: 50%;
+}
+
+.Nombres{
+    visibility:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 95%;
+    height: 80%;
+    top: -40%;
+    
+}
+
+#inputnombres{
+
+    width: 70%;
+}
+
+.n{
+   font-size: larger;
+}
+
+#Puntuar{
+    position:relative;
+    right: -30%;
+    top: -900px;
+    visibility: hidden;
+}
+
+/*Evento hover a puntos*/
+
+.pj1:hover,.pj2:hover,.pj3:hover,.pj4:hover,.pj5:hover{
+
+    color: black;
+    cursor: pointer;
+}
+
+/*Boton puntos (para ventana de opciones)*/
+
+.Btnpuntos{
+
+    width: 70%;
+    height: 30%;
+    background: chocolate;
+    border: solid 1px white;
+    visibility: hidden;
+}
+
+.Btnpuntos:hover{
+
+    background: white;
+    cursor: pointer;
+}
+
+
+/*ventana de opciones*/
+
+/*Aplicar estas clases para construir ventana emergente*/
+
+/*Div contenedor general, es la estructura de la ventana*/
+.Ventanaopciones{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height:50%;
+    padding: 1%;
+
+
+}
+/*Div dentro del contenedor es la barra de titulo y cierre*/
+.Barratitulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background:#54381e;
+    padding: 1%;
+    border: white solid 1px;
+}
+/*titulo*/
+.Titulo{
+    padding: 1%;
+
+    
+}
+/*boton cerrar*/
+.cerrar{
+    width: 5%;
+    height: 5%;
+    margin: 1%;
+    padding: 1%;
+}
+/*div Contenedor del cuerpo de la ventana*/
+.Contenedorv{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    background: orange;
+    padding: 1%;
+    border: white solid 1px;
+
+}
+/*div utilizado para orgenizar y quitar contenido dinamico de la ventana (es invisible)*/
+.Contentdinamico{
+    display: flex;
+    flex-direction: column;
+    border: 1px white solid;
+    width: 90%;
+    height: 90%;
+}
+
+.cerrar:hover{
+
+    cursor: pointer;
+}
+
+/*Anotador del menu*/
+
+.Menuanotador{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right;:  100px;
+
+}
+
+/*Boton limpiar pantalla*/
+.Btnmenuanotador{
+
+    width: 50%;
+    height: 100%;
+    background: chocolate;
+    border: solid 1px white;
+}
+
+.Btnmenuanotador:hover{
+
+    background: white;
+    cursor: pointer;
+}
+
+/*Detallo posicion de ventana cerrar juego */
+#cerrarjuego{
+    position:relative;
+    right: -30%;
+    top: -1500px;
+    visibility: hidden;
+
+}
+
+#cerrarjuego p{
+   color: white;
+
+}
+
+/*Aplico estilos a los Li de las planillas de jugadores*/
+
+.pj1{
+
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    
+
+}
+
+.pj2{
+
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    
+}
+
+.pj3{
+
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    
+}
+
+.pj4{
+
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    
+}
+
+.pj5{
+
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    
+}
+
+/*aplico estilos especificos para jugadas y nombre de jugadores*/
+
+#tjugadas{
+
+color: white;
+background: #54381e;
+}
+
+.n{
+
+    color: white;
+
+}
+
+#player1{
+
+    color: white;
+    background: #54381e;
+}
+
+
+#player2{
+    color: white;
+background: #54381e;
+}
+
+
+#player3{
+
+    color: white;
+background: #54381e;
+}
+
+#player4{
+
+    color: white;
+background: #54381e;
+}
+
+#player5{
+
+    color: white;
+background: #54381e;
+}
